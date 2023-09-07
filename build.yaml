@@ -1,0 +1,11 @@
+
+
+builders:
+  fun_generator:
+    import: "package:fun_generator/builder.dart"
+    builder_factories: ["funBuilder"]
+    build_extensions: {".dart": [".fun.dart"]}
+    auto_apply: dependents
+    build_to: source
+    applies_builders: ["source_gen|combining_builder"]
+
